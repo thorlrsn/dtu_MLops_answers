@@ -2,6 +2,7 @@ from torch import nn
 import torch.nn.functional as F
 import torch
 import matplotlib.pyplot as plt
+
 class MyAwesomeModel(nn.Module):
     def __init__(self):
         super(MyAwesomeModel, self).__init__()
@@ -31,6 +32,9 @@ def train(model, trainloader, testloader, criterion, optimizer=None, epochs=5, p
         model.train()
         for images, labels in trainloader:
             steps += 1
+            images = images.float()
+
+            labels = labels.long()
             
             # Flatten images into a 784 long vector
             # images.resize_(images.size()[0], 784)
@@ -73,7 +77,9 @@ def validation(model, testloader, criterion):
     for images, labels in testloader:
 
         # images = images.resize_(images.size()[0], 784)
-
+        images = images.float()
+        labels = labels.long()
+        
         output = model.forward(images)
         test_loss += criterion(output, labels).item()
 

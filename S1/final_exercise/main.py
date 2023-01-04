@@ -17,6 +17,7 @@ def cli():
 @click.option("--lr", default=1e-3, help='learning rate to use for training')
 def train(lr):
     print("Training...")
+
     # Given model
     # model = fc_model.Network(784, 10, [512, 256, 128])
 
@@ -31,7 +32,7 @@ def train(lr):
     # fc_model.train(model, train_set, test_set, criterion, optimizer, epochs=2)
 
     # Own training (The same as the given, since its pretty awesome)
-    Mymodel.train(model, train_set, test_set, criterion, optimizer, 1)
+    Mymodel.train(model, train_set, test_set, criterion, optimizer, 10)
 
     # Saving model
     save_checkpoint(model)
