@@ -1,2 +1,2 @@
-# dtu_MLops_answers
+# dtu_MLops answers
 Repo with the answers to the January course MLops
