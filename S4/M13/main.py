@@ -27,7 +27,6 @@ def train():
     # Given training
     # fc_model.train(model, train_set, test_set, criterion, optimizer, epochs=2)
 
-    
     # Own training (The same as the given, since its pretty awesome)
     print("Training...")
     Mymodel.train(model, train_set, test_set, criterion, optimizer, epochs)
@@ -100,6 +99,7 @@ def wandb_table(model, testloader):
     wandb.log({"Preditions": table})
 
 def wandb_config(model):
+    # Old wandb config
     # args = {"batch_size": 64,  # try log-spaced values from 1 to 50,000
     #       "num_workers": 2,  # try 0, 1, and 2
     #       "pin_memory": False,  # try False and True
@@ -110,9 +110,6 @@ def wandb_config(model):
     # wandb.init(config=args)
     # wandb.watch(model, log_freq=100)
 
-    # For hyperparemeter sweeps
-
-    # Define sweep config
     sweep_configuration = {
         'method': 'random',
         'name': 'sweep',
