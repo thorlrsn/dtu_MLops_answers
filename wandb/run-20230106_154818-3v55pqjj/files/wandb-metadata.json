@@ -1,0 +1,42 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-01-06T14:48:19.901934",
+    "startedAt": "2023-01-06T14:48:18.429305",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:\\Users\\thorl\\Documents\\DTU\\JAN23\\dtu_MLops_answers\\S4\\M13\\main.py",
+    "codePath": "S4\\M13\\main.py",
+    "git": {
+        "remote": "https://github.com/thorlrsn/dtu_MLops_answers",
+        "commit": "747183f662b6efba1d61f6928b0c5986aa61c0a5"
+    },
+    "email": "thorlarsen96@gmail.com",
+    "root": "C:/Users/thorl/Documents/DTU/JAN23/dtu_MLops_answers",
+    "host": "LAPTOP-GGIBG9FB",
+    "username": "thorl",
+    "executable": "C:\\Users\\thorl\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3301.0,
+        "min": 0.0,
+        "max": 3301.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3301.0,
+            "min": 0.0,
+            "max": 3301.0
+        }
+    ],
+    "disk": {
+        "total": 358.50487899780273,
+        "used": 283.4907760620117
+    },
+    "memory": {
+        "total": 13.865959167480469
+    }
+}

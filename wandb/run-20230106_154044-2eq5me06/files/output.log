@@ -1,0 +1,12 @@
+Create sweep with ID: gl8vqo4u
+Sweep URL: https://wandb.ai/dtu/uncategorized/sweeps/gl8vqo4u
+Training...
+Epoch: 1/1..  Training Loss: 1.192..  Test Loss: 0.719..  Test Accuracy: 0.766
+Epoch: 1/1..  Training Loss: 0.366..  Test Loss: 0.450..  Test Accuracy: 0.858
+Epoch: 1/1..  Training Loss: 0.254..  Test Loss: 0.398..  Test Accuracy: 0.876
+Epoch: 1/1..  Training Loss: 0.175..  Test Loss: 0.333..  Test Accuracy: 0.898
+Epoch: 1/1..  Training Loss: 0.187..  Test Loss: 0.293..  Test Accuracy: 0.906
+Epoch: 1/1..  Training Loss: 0.139..  Test Loss: 0.347..  Test Accuracy: 0.891
+Epoch: 1/1..  Training Loss: 0.135..  Test Loss: 0.216..  Test Accuracy: 0.932
+Epoch: 1/1..  Training Loss: 0.117..  Test Loss: 0.163..  Test Accuracy: 0.946
+Epoch: 1/1..  Training Loss: 0.117..  Test Loss: 0.241..  Test Accuracy: 0.915

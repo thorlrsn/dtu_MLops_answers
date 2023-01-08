@@ -1,0 +1,3 @@
+Create sweep with ID: 5gtbwkql
+Sweep URL: https://wandb.ai/dtu/uncategorized/sweeps/5gtbwkql
+wandb: WARNING Calling wandb.login() after wandb.init() has no effect.

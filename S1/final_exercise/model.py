@@ -32,8 +32,8 @@ def train(model, trainloader, testloader, criterion, optimizer=None, epochs=5, p
         model.train()
         for images, labels in trainloader:
             steps += 1
+            
             images = images.float()
-
             labels = labels.long()
             
             # Flatten images into a 784 long vector

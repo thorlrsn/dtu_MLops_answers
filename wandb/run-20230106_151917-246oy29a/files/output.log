@@ -1,0 +1,3 @@
+Create sweep with ID: cdeegw55
+Sweep URL: https://wandb.ai/dtu/M13/sweeps/cdeegw55
+wandb: WARNING Calling wandb.login() after wandb.init() has no effect.

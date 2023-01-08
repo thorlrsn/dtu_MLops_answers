@@ -1,0 +1,8 @@
+
+Epoch: 1/1..  Training Loss: 1.524..  Test Loss: 0.940..  Test Accuracy: 0.699
+Epoch: 1/1..  Training Loss: 0.537..  Test Loss: 0.681..  Test Accuracy: 0.783
+Epoch: 1/1..  Training Loss: 0.395..  Test Loss: 0.486..  Test Accuracy: 0.852
+Epoch: 1/1..  Training Loss: 0.275..  Test Loss: 0.453..  Test Accuracy: 0.865
+Epoch: 1/1..  Training Loss: 0.249..  Test Loss: 0.505..  Test Accuracy: 0.851
+Epoch: 1/1..  Training Loss: 0.207..  Test Loss: 0.333..  Test Accuracy: 0.901
+Epoch: 1/1..  Training Loss: 0.165..  Test Loss: 0.335..  Test Accuracy: 0.889

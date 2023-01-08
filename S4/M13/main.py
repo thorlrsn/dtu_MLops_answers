@@ -6,28 +6,37 @@ from data import mnist
 import model as Mymodel
 
 def train():
-    print("Training...")
-
     # Given model
     # model = fc_model.Network(784, 10, [512, 256, 128])
 
     # Own model
     model = Mymodel.MyAwesomeModel()
-    criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-    train_set, test_set = mnist()
+    # Wandb stuff
+    wandb.init()
+    wandb.watch(model, log_freq=100)
+    bs = wandb.config.batch_size
+    epochs = wandb.config.epochs
+    lr  =  wandb.config.lr
+
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.Adam(model.parameters(), lr=lr)
+
+    train_set, test_set = mnist(bs)
 
     # Given training
     # fc_model.train(model, train_set, test_set, criterion, optimizer, epochs=2)
 
+    
     # Own training (The same as the given, since its pretty awesome)
-    Mymodel.train(model, train_set, test_set, criterion, optimizer, 3)
+    print("Training...")
+    Mymodel.train(model, train_set, test_set, criterion, optimizer, epochs)
 
-    # exporting table to wandb with sampled images, preditions and truths
+    # Exporting table to wandb with sampled images, preditions and truths
     wandb_table(model, test_set)
+
     # Saving model
-    save_checkpoint(model)
+    # save_checkpoint(model)
 
 def evaluate(model_checkpoint):
     print("Evaluating...")
@@ -90,9 +99,43 @@ def wandb_table(model, testloader):
     
     wandb.log({"Preditions": table})
 
+def wandb_config(model):
+    # args = {"batch_size": 64,  # try log-spaced values from 1 to 50,000
+    #       "num_workers": 2,  # try 0, 1, and 2
+    #       "pin_memory": False,  # try False and True
+    #       "precision": 32,  # try 16 and 32
+    #       "optimizer": "Adadelta",  # try optim.Adadelta and optim.SGD
+    #       }
+    # wandb.init()
+    # wandb.init(config=args)
+    # wandb.watch(model, log_freq=100)
+
+    # For hyperparemeter sweeps
+
+    # Define sweep config
+    sweep_configuration = {
+        'method': 'random',
+        'name': 'sweep',
+        'metric': {'goal': 'maximize', 'name': 'val_acc'},
+        'parameters': 
+        {
+            'batch_size': {'values': [16, 32, 64]},
+            'epochs': {'values': [1, 3, 5]},
+            'lr': {'max': 0.001, 'min': 0.0001}
+        }
+    }
+
+    # Initialize sweep by passing in config. (Optional) Provide a name of the project.
+    sweep_id = wandb.sweep(sweep=sweep_configuration)
+    # wandb.init()
+    return sweep_id
+
+
 if __name__ == "__main__":
-    model = load_checkpoint("S4/M13/checkpoint.pth")
-    train()
+    model = load_checkpoint(r"C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\S4\M13\checkpoint.pth")
+    sweep_id = wandb_config(model)
+    wandb.agent(sweep_id, function=train, count=4)
+    # train()
 
     
     

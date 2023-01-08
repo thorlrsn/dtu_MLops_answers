@@ -1,0 +1,44 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.7
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.10
+    start_time: 1673016044.699467
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 1
+      - 16
+      - 23
+      4: 3.8.10
+      5: 0.13.7
+      8:
+      - 3
+      - 5
+batch_size:
+  desc: null
+  value: 64
+num_workers:
+  desc: null
+  value: 2
+optimizer:
+  desc: null
+  value: Adadelta
+pin_memory:
+  desc: null
+  value: false
+precision:
+  desc: null
+  value: 32

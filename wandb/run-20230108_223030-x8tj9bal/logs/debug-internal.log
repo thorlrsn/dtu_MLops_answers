@@ -1,0 +1,262 @@
+2023-01-08 22:30:30,115 INFO    StreamThr :21876 [internal.py:wandb_internal():87] W&B internal server running at pid: 21876, started at: 2023-01-08 22:30:30.115303
+2023-01-08 22:30:30,123 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: status
+2023-01-08 22:30:30,131 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: status
+2023-01-08 22:30:30,131 DEBUG   SenderThread:21876 [sender.py:send():303] send: header
+2023-01-08 22:30:30,131 INFO    WriterThread:21876 [datastore.py:open_for_write():75] open: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\run-x8tj9bal.wandb
+2023-01-08 22:30:30,179 DEBUG   SenderThread:21876 [sender.py:send():303] send: run
+2023-01-08 22:30:30,917 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: check_version
+2023-01-08 22:30:30,925 INFO    SenderThread:21876 [dir_watcher.py:__init__():216] watching files in: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files
+2023-01-08 22:30:30,925 INFO    SenderThread:21876 [sender.py:_start_run_threads():928] run started: x8tj9bal with start time 1673213430.115302
+2023-01-08 22:30:30,925 DEBUG   SenderThread:21876 [sender.py:send():303] send: summary
+2023-01-08 22:30:30,925 INFO    SenderThread:21876 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-08 22:30:30,925 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: check_version
+2023-01-08 22:30:31,093 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: run_start
+2023-01-08 22:30:31,109 DEBUG   HandlerThread:21876 [system_info.py:__init__():31] System info init
+2023-01-08 22:30:31,109 DEBUG   HandlerThread:21876 [system_info.py:__init__():46] System info init done
+2023-01-08 22:30:31,109 INFO    HandlerThread:21876 [system_monitor.py:start():150] Starting system monitor
+2023-01-08 22:30:31,109 INFO    HandlerThread:21876 [system_monitor.py:probe():171] Collecting system info
+2023-01-08 22:30:31,117 INFO    SystemMonitor:21876 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-08 22:30:31,117 DEBUG   HandlerThread:21876 [system_info.py:probe():195] Probing system
+2023-01-08 22:30:31,117 INFO    SystemMonitor:21876 [interfaces.py:start():168] Started cpu
+2023-01-08 22:30:31,125 INFO    SystemMonitor:21876 [interfaces.py:start():168] Started disk
+2023-01-08 22:30:31,133 INFO    SystemMonitor:21876 [interfaces.py:start():168] Started memory
+2023-01-08 22:30:31,133 DEBUG   HandlerThread:21876 [system_info.py:_probe_git():180] Probing git
+2023-01-08 22:30:31,133 INFO    SystemMonitor:21876 [interfaces.py:start():168] Started network
+2023-01-08 22:30:31,245 DEBUG   HandlerThread:21876 [system_info.py:_probe_git():188] Probing git done
+2023-01-08 22:30:31,245 DEBUG   HandlerThread:21876 [system_info.py:probe():241] Probing system done
+2023-01-08 22:30:31,245 DEBUG   HandlerThread:21876 [system_monitor.py:probe():180] {'os': 'Windows-10-10.0.19044-SP0', 'python': '3.8.10', 'heartbeatAt': '2023-01-08T21:30:31.117628', 'startedAt': '2023-01-08T21:30:30.083749', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'c:\\Users\\thorl\\Documents\\DTU\\JAN23\\dtu_MLops_answers\\S4\\M13\\main.py', 'codePath': 'S4\\M13\\main.py', 'git': {'remote': 'https://github.com/thorlrsn/dtu_MLops_answers', 'commit': '747183f662b6efba1d61f6928b0c5986aa61c0a5'}, 'email': 'thorlarsen96@gmail.com', 'root': 'C:/Users/thorl/Documents/DTU/JAN23/dtu_MLops_answers', 'host': 'LAPTOP-GGIBG9FB', 'username': 'thorl', 'executable': 'C:\\Users\\thorl\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3301.0, 'min': 0.0, 'max': 3301.0}, 'cpu_freq_per_core': [{'current': 3301.0, 'min': 0.0, 'max': 3301.0}], 'disk': {'total': 358.50487899780273, 'used': 284.11209869384766}, 'memory': {'total': 13.865959167480469}}
+2023-01-08 22:30:31,245 INFO    HandlerThread:21876 [system_monitor.py:probe():181] Finished collecting system info
+2023-01-08 22:30:31,245 INFO    HandlerThread:21876 [system_monitor.py:probe():184] Publishing system info
+2023-01-08 22:30:31,245 DEBUG   HandlerThread:21876 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-01-08 22:30:31,245 DEBUG   HandlerThread:21876 [system_info.py:_save_pip():67] Saving pip packages done
+2023-01-08 22:30:31,245 INFO    HandlerThread:21876 [system_monitor.py:probe():186] Finished publishing system info
+2023-01-08 22:30:31,605 DEBUG   SenderThread:21876 [sender.py:send():303] send: files
+2023-01-08 22:30:31,605 INFO    SenderThread:21876 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-01-08 22:30:31,621 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-08 22:30:31,629 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: stop_status
+2023-01-08 22:30:31,927 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\requirements.txt
+2023-01-08 22:30:31,927 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\wandb-metadata.json
+2023-01-08 22:30:31,927 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\wandb-summary.json
+2023-01-08 22:30:32,003 DEBUG   SenderThread:21876 [sender.py:send():303] send: telemetry
+2023-01-08 22:30:32,520 INFO    Thread-28 :21876 [upload_job.py:push():143] Uploaded file C:\Users\thorl\AppData\Local\Temp\tmpvqeauw13wandb\3kspm23v-wandb-metadata.json
+2023-01-08 22:30:34,941 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\output.log
+2023-01-08 22:30:36,952 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\output.log
+2023-01-08 22:30:38,980 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\output.log
+2023-01-08 22:30:40,986 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\output.log
+2023-01-08 22:30:42,995 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\output.log
+2023-01-08 22:30:45,012 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\output.log
+2023-01-08 22:30:47,015 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-08 22:30:47,015 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: stop_status
+2023-01-08 22:30:47,025 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\output.log
+2023-01-08 22:30:51,059 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\output.log
+2023-01-08 22:30:53,061 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\output.log
+2023-01-08 22:30:55,073 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\output.log
+2023-01-08 22:30:56,296 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: log_artifact
+2023-01-08 22:30:56,297 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: log_artifact
+2023-01-08 22:30:56,318 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: partial_history
+2023-01-08 22:30:57,091 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\media\table\Preditions_0_3d4c752b89c3c71f1d3d.table.json
+2023-01-08 22:30:57,091 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\media
+2023-01-08 22:30:57,091 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\media\table
+2023-01-08 22:30:57,331 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-08 22:30:59,537 INFO    Thread-35 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\05\648bdbf7ab05c2ab7ef4cb37c686e8
+2023-01-08 22:30:59,545 INFO    Thread-57 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\48\8513e80060e072e0dae771e03f0a7f
+2023-01-08 22:30:59,553 INFO    Thread-59 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\51\179b37b2da482c4e1c1744a048e726
+2023-01-08 22:30:59,577 INFO    Thread-93 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\c6\ce59cb306f2983de5e5625c06b4f0b
+2023-01-08 22:30:59,601 INFO    Thread-47 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\21\9f8ca19338ce1cb31206507c5ad7b6
+2023-01-08 22:30:59,625 INFO    Thread-41 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\15\eda3bd453a196a8709409ba1a77ffa
+2023-01-08 22:30:59,633 INFO    Thread-36 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\0a\c718e568fa1970a3c26320f450a790
+2023-01-08 22:30:59,681 INFO    Thread-38 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\0f\9c01099c933c68774879206e0678f2
+2023-01-08 22:30:59,723 INFO    Thread-74 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\7e\b79fca04e2737614171d435e64872e
+2023-01-08 22:30:59,723 INFO    Thread-42 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\18\01401909fad401be58394cb8780597
+2023-01-08 22:30:59,731 INFO    Thread-81 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\9c\ceceb99392b2ccd5db90165836feed
+2023-01-08 22:30:59,731 INFO    Thread-71 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\6f\500eca42f0dd433d873cba8f888b88
+2023-01-08 22:30:59,731 INFO    Thread-77 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\8c\8bb12a7e4de6b8365c12514e1e859b
+2023-01-08 22:30:59,731 INFO    Thread-51 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\36\a7b2f7dbc00fd07a9880e818881a1e
+2023-01-08 22:30:59,739 INFO    Thread-66 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\62\3809e6fcc2d1cf42e98cb56e804b0a
+2023-01-08 22:30:59,739 INFO    Thread-91 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\b2\4933b26836c1288add6406270f80ce
+2023-01-08 22:30:59,747 INFO    Thread-34 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\01\2d2b3b24f4911664c76269754e6293
+2023-01-08 22:30:59,747 INFO    Thread-78 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\93\47b37ec982bf694bda7a6ee7be4331
+2023-01-08 22:30:59,747 INFO    Thread-33 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\01\0b9a41f2eb663c8585b1d12f90d398
+2023-01-08 22:30:59,755 INFO    Thread-90 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\b0\1101a808103ac16aa9a3b51e283cbe
+2023-01-08 22:30:59,755 INFO    Thread-84 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\a4\3a4b21e91fa29ae3e23a9984baa219
+2023-01-08 22:30:59,763 INFO    Thread-39 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\10\0018c25b85fec0f52b0e6a736dae59
+2023-01-08 22:30:59,763 INFO    Thread-76 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\8b\e6a08c88917c7eea039b3e36c2faf9
+2023-01-08 22:30:59,771 INFO    Thread-83 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\a2\6ebc4c99aefa04b07a7b653ec60750
+2023-01-08 22:30:59,771 INFO    Thread-45 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\1e\1826beab87573aebaf1810571d5670
+2023-01-08 22:30:59,779 INFO    Thread-32 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\00\adba8c98b3c139879349219f07d117
+2023-01-08 22:30:59,787 INFO    Thread-87 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\aa\0cf222710f63a498025a5ebb5b6b3f
+2023-01-08 22:30:59,803 INFO    Thread-48 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\22\fedf4f4fdf1193af9de903bd92cbcf
+2023-01-08 22:30:59,803 INFO    Thread-75 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\8a\040f86aed38f3d7d617e8a5f9ef1d0
+2023-01-08 22:30:59,803 INFO    Thread-69 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\6b\e0183f148bae7f4e9ec3698de10f4f
+2023-01-08 22:30:59,811 INFO    Thread-44 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\1c\e4dc24036c794549383133658f873f
+2023-01-08 22:30:59,811 INFO    Thread-49 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\2a\55bc96368c8a41a7f42ec915c14877
+2023-01-08 22:30:59,819 INFO    Thread-68 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\68\5b43ca07827299716af69a99ba06b8
+2023-01-08 22:30:59,819 INFO    Thread-72 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\74\b3f6c31ec3a167084b5519f0f13007
+2023-01-08 22:30:59,827 INFO    Thread-58 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\50\b2fc46eec5ef6375482f89a4e1ab0d
+2023-01-08 22:30:59,827 INFO    Thread-85 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\a9\6b5ca280d268fddda64fd9b907b7ad
+2023-01-08 22:30:59,827 INFO    Thread-61 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\51\88d9072b6a2feb8ada17ab0366fa76
+2023-01-08 22:30:59,835 INFO    Thread-62 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\52\d1c70dfc47cd9ac0271d092b4c3fe1
+2023-01-08 22:30:59,835 INFO    Thread-64 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\5b\e7ad31fbe7f6d70a2a9819ab63cfcb
+2023-01-08 22:30:59,835 INFO    Thread-63 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\56\e1710d475de89f8c60880adf11ba4e
+2023-01-08 22:30:59,835 INFO    Thread-65 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\5e\f12bfbe6d58da4729ff3ab38770259
+2023-01-08 22:30:59,835 INFO    Thread-56 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\48\7d7ed8edeed61087b5645f756ac764
+2023-01-08 22:30:59,843 INFO    Thread-46 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\1f\c00a47d69fa3eaedc5f34036d02b58
+2023-01-08 22:30:59,843 INFO    Thread-80 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\96\d73f3e3fb8b1b3f6e178e356fe88d9
+2023-01-08 22:30:59,843 INFO    Thread-70 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\6e\26b7a810402901b7984f736fc1baa2
+2023-01-08 22:30:59,851 INFO    Thread-89 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\ae\dd04cbc5e328dfdc3208d919e5474d
+2023-01-08 22:30:59,851 INFO    Thread-92 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\c0\e7a9e1109dbe0425d4908e507bb10c
+2023-01-08 22:30:59,859 INFO    Thread-73 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\7d\74d5a48469182e926dbf9e366b3727
+2023-01-08 22:30:59,859 INFO    Thread-86 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\a9\d9065b9ebdee51bc9c81dbf9a979ba
+2023-01-08 22:30:59,859 INFO    Thread-50 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\35\61d92747157560784020088debf1fc
+2023-01-08 22:30:59,859 INFO    Thread-37 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\0c\350eab9f72c5ef319004e651f1a8b7
+2023-01-08 22:30:59,867 INFO    Thread-52 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\37\10f27aded279aa8945b25035c10df0
+2023-01-08 22:30:59,867 INFO    Thread-31 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\00\7a8b3a1accf2e5ca67a91ea93ab07f
+2023-01-08 22:30:59,867 INFO    Thread-88 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\ac\0a85bd5cdb26eb646d977f12756b31
+2023-01-08 22:30:59,875 INFO    Thread-53 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\39\f3740fd69a2a4e931c66fe39439ad1
+2023-01-08 22:30:59,883 INFO    Thread-55 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\45\3084860f6fa8a584a0e9efeba35683
+2023-01-08 22:30:59,883 INFO    Thread-43 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\18\3381a9e55d63e38400be7702106a0d
+2023-01-08 22:30:59,883 INFO    Thread-79 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\93\4b193aa6c21c904e63b3f64a149e9c
+2023-01-08 22:30:59,883 INFO    Thread-54 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\3a\eb714c91b8ca8902e61c73b1a95ea2
+2023-01-08 22:30:59,883 INFO    Thread-82 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\9f\15674b556f747495ea60f2caf488f2
+2023-01-08 22:30:59,891 INFO    Thread-60 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\51\626e125ea2c3bac1ba9747241075fa
+2023-01-08 22:30:59,891 INFO    Thread-40 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\15\49722748f67b05caf6cf9da95495d1
+2023-01-08 22:30:59,899 INFO    Thread-67 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\63\b060135d0759159089fa491a8bcd41
+2023-01-08 22:30:59,899 INFO    Thread-30 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\40\4aae888e502e045933ab94de95a877
+2023-01-08 22:31:00,381 INFO    Thread-94 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\cd\e3559046435d227dd1bbbf2939e4f3
+2023-01-08 22:31:00,389 INFO    Thread-95 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\d4\37249b851cf43858715ab9b1de6d71
+2023-01-08 22:31:00,421 INFO    Thread-96 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\d8\cbfbd3cbbb292b3b39e07288e11012
+2023-01-08 22:31:00,861 INFO    Thread-104:21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\e9\6534d3e0118406ab308bf430f46d6b
+2023-01-08 22:31:00,885 INFO    Thread-101:21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\e4\37e1a2319a6c693acd16090cb132dc
+2023-01-08 22:31:00,901 INFO    Thread-97 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\dd\5c204d94790915773b7ec12687a5d3
+2023-01-08 22:31:00,901 INFO    Thread-105:21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\ef\a8887f69d1e67450711363f951e1ae
+2023-01-08 22:31:00,901 INFO    Thread-108:21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\f8\90a20978af769e9248029b9bdb8968
+2023-01-08 22:31:00,917 INFO    Thread-100:21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\e3\2a6cf41ef28c693e25f52b436abe64
+2023-01-08 22:31:00,917 INFO    Thread-103:21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\e8\4252d794f45fe94e5ec89f29179032
+2023-01-08 22:31:00,917 INFO    Thread-102:21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\e7\48b61ea5362a937386397cdda2053c
+2023-01-08 22:31:00,925 INFO    Thread-99 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\e0\73f61eba8052ac2641ce972d6fde1d
+2023-01-08 22:31:00,925 INFO    Thread-109:21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\fb\808b106de4ec357df33f44de95af6d
+2023-01-08 22:31:00,925 INFO    Thread-106:21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\f0\9883f014ff808650c30430f16c1276
+2023-01-08 22:31:00,933 INFO    Thread-98 :21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\df\50bf6dd1d087bde5325f48b0f592d4
+2023-01-08 22:31:00,933 INFO    Thread-107:21876 [upload_job.py:push():101] Uploaded file C:\Users\thorl\.cache\wandb\artifacts\obj\md5\f6\b9d57d0c0e58237090bb5e36e6e9a3
+2023-01-08 22:31:02,165 INFO    SenderThread:21876 [sender.py:send_request_log_artifact():1222] logged artifact run-x8tj9bal-Preditions - {'id': 'QXJ0aWZhY3Q6MzE2ODQzMjQy', 'digest': 'c63edcf210e8b2e62860b60bf3db383b', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ4OTgxNjEz', 'latestArtifact': None}, 'version': 'latest'}
+2023-01-08 22:31:02,356 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-08 22:31:02,477 DEBUG   SenderThread:21876 [sender.py:send():303] send: files
+2023-01-08 22:31:02,477 INFO    SenderThread:21876 [sender.py:_save_file():1171] saving file media\table\Preditions_0_3d4c752b89c3c71f1d3d.table.json with policy now
+2023-01-08 22:31:02,477 DEBUG   SenderThread:21876 [sender.py:send():303] send: history
+2023-01-08 22:31:02,477 DEBUG   SenderThread:21876 [sender.py:send():303] send: summary
+2023-01-08 22:31:02,484 INFO    SenderThread:21876 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-08 22:31:02,484 DEBUG   SenderThread:21876 [sender.py:send():303] send: telemetry
+2023-01-08 22:31:02,484 DEBUG   SenderThread:21876 [sender.py:send():303] send: exit
+2023-01-08 22:31:02,484 INFO    SenderThread:21876 [sender.py:send_exit():442] handling exit code: 0
+2023-01-08 22:31:02,484 INFO    SenderThread:21876 [sender.py:send_exit():444] handling runtime: 25
+2023-01-08 22:31:02,484 INFO    SenderThread:21876 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-08 22:31:02,484 INFO    SenderThread:21876 [sender.py:send_exit():450] send defer
+2023-01-08 22:31:02,484 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: poll_exit
+2023-01-08 22:31:02,484 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 22:31:02,484 INFO    HandlerThread:21876 [handler.py:handle_request_defer():162] handle defer: 0
+2023-01-08 22:31:02,484 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: defer
+2023-01-08 22:31:02,484 INFO    SenderThread:21876 [sender.py:send_request_defer():459] handle sender defer: 0
+2023-01-08 22:31:02,484 INFO    SenderThread:21876 [sender.py:transition_state():463] send defer: 1
+2023-01-08 22:31:02,492 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 22:31:02,492 INFO    HandlerThread:21876 [handler.py:handle_request_defer():162] handle defer: 1
+2023-01-08 22:31:02,492 INFO    HandlerThread:21876 [system_monitor.py:finish():160] Stopping system monitor
+2023-01-08 22:31:02,492 DEBUG   SystemMonitor:21876 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-01-08 22:31:02,492 DEBUG   SystemMonitor:21876 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-01-08 22:31:02,492 DEBUG   SystemMonitor:21876 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-01-08 22:31:02,500 INFO    HandlerThread:21876 [interfaces.py:finish():175] Joined cpu
+2023-01-08 22:31:02,500 INFO    HandlerThread:21876 [interfaces.py:finish():175] Joined disk
+2023-01-08 22:31:02,500 INFO    HandlerThread:21876 [interfaces.py:finish():175] Joined memory
+2023-01-08 22:31:02,500 INFO    HandlerThread:21876 [interfaces.py:finish():175] Joined network
+2023-01-08 22:31:02,500 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: defer
+2023-01-08 22:31:02,500 INFO    SenderThread:21876 [sender.py:send_request_defer():459] handle sender defer: 1
+2023-01-08 22:31:02,500 INFO    SenderThread:21876 [sender.py:transition_state():463] send defer: 2
+2023-01-08 22:31:02,500 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 22:31:02,508 INFO    HandlerThread:21876 [handler.py:handle_request_defer():162] handle defer: 2
+2023-01-08 22:31:02,508 DEBUG   SenderThread:21876 [sender.py:send():303] send: stats
+2023-01-08 22:31:02,508 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: defer
+2023-01-08 22:31:02,508 INFO    SenderThread:21876 [sender.py:send_request_defer():459] handle sender defer: 2
+2023-01-08 22:31:02,508 INFO    SenderThread:21876 [sender.py:transition_state():463] send defer: 3
+2023-01-08 22:31:02,508 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 22:31:02,508 INFO    HandlerThread:21876 [handler.py:handle_request_defer():162] handle defer: 3
+2023-01-08 22:31:02,508 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: defer
+2023-01-08 22:31:02,508 INFO    SenderThread:21876 [sender.py:send_request_defer():459] handle sender defer: 3
+2023-01-08 22:31:02,508 INFO    SenderThread:21876 [sender.py:transition_state():463] send defer: 4
+2023-01-08 22:31:02,508 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 22:31:02,508 INFO    HandlerThread:21876 [handler.py:handle_request_defer():162] handle defer: 4
+2023-01-08 22:31:02,508 DEBUG   SenderThread:21876 [sender.py:send():303] send: summary
+2023-01-08 22:31:02,508 INFO    SenderThread:21876 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-08 22:31:02,508 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: defer
+2023-01-08 22:31:02,508 INFO    SenderThread:21876 [sender.py:send_request_defer():459] handle sender defer: 4
+2023-01-08 22:31:02,508 INFO    SenderThread:21876 [sender.py:transition_state():463] send defer: 5
+2023-01-08 22:31:02,508 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 22:31:02,508 INFO    HandlerThread:21876 [handler.py:handle_request_defer():162] handle defer: 5
+2023-01-08 22:31:02,508 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: defer
+2023-01-08 22:31:02,508 INFO    SenderThread:21876 [sender.py:send_request_defer():459] handle sender defer: 5
+2023-01-08 22:31:02,807 INFO    SenderThread:21876 [sender.py:transition_state():463] send defer: 6
+2023-01-08 22:31:02,807 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 22:31:02,815 INFO    HandlerThread:21876 [handler.py:handle_request_defer():162] handle defer: 6
+2023-01-08 22:31:02,815 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: defer
+2023-01-08 22:31:02,815 INFO    SenderThread:21876 [sender.py:send_request_defer():459] handle sender defer: 6
+2023-01-08 22:31:03,212 INFO    Thread-110:21876 [upload_job.py:push():143] Uploaded file C:\Users\thorl\AppData\Local\Temp\tmpvqeauw13wandb\24dy76w1-media/table/Preditions_0_3d4c752b89c3c71f1d3d.table.json
+2023-01-08 22:31:03,310 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\config.yaml
+2023-01-08 22:31:03,310 INFO    Thread-23 :21876 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\wandb-summary.json
+2023-01-08 22:31:04,814 INFO    SenderThread:21876 [sender.py:transition_state():463] send defer: 7
+2023-01-08 22:31:04,814 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 22:31:04,814 INFO    HandlerThread:21876 [handler.py:handle_request_defer():162] handle defer: 7
+2023-01-08 22:31:04,814 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: defer
+2023-01-08 22:31:04,814 INFO    SenderThread:21876 [sender.py:send_request_defer():459] handle sender defer: 7
+2023-01-08 22:31:04,814 INFO    SenderThread:21876 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-01-08 22:31:05,328 INFO    SenderThread:21876 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\output.log
+2023-01-08 22:31:05,328 INFO    SenderThread:21876 [dir_watcher.py:finish():392] scan: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files
+2023-01-08 22:31:05,328 INFO    SenderThread:21876 [dir_watcher.py:finish():406] scan save: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\config.yaml config.yaml
+2023-01-08 22:31:05,328 INFO    SenderThread:21876 [dir_watcher.py:finish():406] scan save: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\output.log output.log
+2023-01-08 22:31:05,328 INFO    SenderThread:21876 [dir_watcher.py:finish():406] scan save: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\requirements.txt requirements.txt
+2023-01-08 22:31:05,343 INFO    SenderThread:21876 [dir_watcher.py:finish():406] scan save: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\wandb-metadata.json wandb-metadata.json
+2023-01-08 22:31:05,343 INFO    SenderThread:21876 [dir_watcher.py:finish():406] scan save: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\wandb-summary.json wandb-summary.json
+2023-01-08 22:31:05,367 INFO    SenderThread:21876 [dir_watcher.py:finish():406] scan save: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\media\table\Preditions_0_3d4c752b89c3c71f1d3d.table.json media\table\Preditions_0_3d4c752b89c3c71f1d3d.table.json
+2023-01-08 22:31:05,367 INFO    SenderThread:21876 [sender.py:transition_state():463] send defer: 8
+2023-01-08 22:31:05,383 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 22:31:05,383 INFO    HandlerThread:21876 [handler.py:handle_request_defer():162] handle defer: 8
+2023-01-08 22:31:05,383 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: defer
+2023-01-08 22:31:05,383 INFO    SenderThread:21876 [sender.py:send_request_defer():459] handle sender defer: 8
+2023-01-08 22:31:05,383 INFO    SenderThread:21876 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-08 22:31:06,336 INFO    Thread-111:21876 [upload_job.py:push():143] Uploaded file C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\config.yaml
+2023-01-08 22:31:06,336 INFO    Thread-114:21876 [upload_job.py:push():143] Uploaded file C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\wandb-summary.json
+2023-01-08 22:31:06,336 INFO    Thread-113:21876 [upload_job.py:push():143] Uploaded file C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\requirements.txt
+2023-01-08 22:31:06,336 INFO    Thread-112:21876 [upload_job.py:push():143] Uploaded file C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\files\output.log
+2023-01-08 22:31:06,536 INFO    Thread-22 :21876 [sender.py:transition_state():463] send defer: 9
+2023-01-08 22:31:06,536 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 22:31:06,536 INFO    HandlerThread:21876 [handler.py:handle_request_defer():162] handle defer: 9
+2023-01-08 22:31:06,536 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: defer
+2023-01-08 22:31:06,536 INFO    SenderThread:21876 [sender.py:send_request_defer():459] handle sender defer: 9
+2023-01-08 22:31:06,536 INFO    SenderThread:21876 [file_pusher.py:join():173] waiting for file pusher
+2023-01-08 22:31:06,536 INFO    SenderThread:21876 [sender.py:transition_state():463] send defer: 10
+2023-01-08 22:31:06,536 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 22:31:06,536 INFO    HandlerThread:21876 [handler.py:handle_request_defer():162] handle defer: 10
+2023-01-08 22:31:06,536 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: defer
+2023-01-08 22:31:06,536 INFO    SenderThread:21876 [sender.py:send_request_defer():459] handle sender defer: 10
+2023-01-08 22:31:06,739 INFO    SenderThread:21876 [sender.py:transition_state():463] send defer: 11
+2023-01-08 22:31:06,739 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 22:31:06,739 INFO    HandlerThread:21876 [handler.py:handle_request_defer():162] handle defer: 11
+2023-01-08 22:31:06,739 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: defer
+2023-01-08 22:31:06,739 INFO    SenderThread:21876 [sender.py:send_request_defer():459] handle sender defer: 11
+2023-01-08 22:31:06,739 INFO    SenderThread:21876 [sender.py:transition_state():463] send defer: 12
+2023-01-08 22:31:06,739 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 22:31:06,739 INFO    HandlerThread:21876 [handler.py:handle_request_defer():162] handle defer: 12
+2023-01-08 22:31:06,739 DEBUG   SenderThread:21876 [sender.py:send():303] send: final
+2023-01-08 22:31:06,747 DEBUG   SenderThread:21876 [sender.py:send():303] send: footer
+2023-01-08 22:31:06,747 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: defer
+2023-01-08 22:31:06,747 INFO    SenderThread:21876 [sender.py:send_request_defer():459] handle sender defer: 12
+2023-01-08 22:31:06,747 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-08 22:31:06,747 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: poll_exit
+2023-01-08 22:31:06,747 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: server_info
+2023-01-08 22:31:06,747 DEBUG   SenderThread:21876 [sender.py:send_request():317] send_request: server_info
+2023-01-08 22:31:06,755 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: get_summary
+2023-01-08 22:31:06,755 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: sampled_history
+2023-01-08 22:31:07,149 DEBUG   HandlerThread:21876 [handler.py:handle_request():139] handle_request: shutdown
+2023-01-08 22:31:07,149 INFO    HandlerThread:21876 [handler.py:finish():814] shutting down handler
+2023-01-08 22:31:07,747 INFO    WriterThread:21876 [datastore.py:close():279] close: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230108_223030-x8tj9bal\run-x8tj9bal.wandb
+2023-01-08 22:31:08,153 INFO    SenderThread:21876 [sender.py:finish():1331] shutting down sender
+2023-01-08 22:31:08,153 INFO    SenderThread:21876 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-08 22:31:08,153 INFO    SenderThread:21876 [file_pusher.py:join():173] waiting for file pusher
+2023-01-08 22:31:13,185 INFO    MainThread:21876 [internal.py:handle_exit():77] Internal process exited

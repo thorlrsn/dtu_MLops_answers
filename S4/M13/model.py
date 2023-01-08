@@ -23,15 +23,12 @@ class MyAwesomeModel(nn.Module):
         return F.log_softmax(x, dim=1)
 
 def train(model, trainloader, testloader, criterion, optimizer=None, epochs=5, print_every=40):
-    if optimizer is None:
-        optimizer = torch.optim.Adam(model.parameters(), lr=1e-2)
+    # if optimizer is None:
+    #     optimizer = torch.optim.Adam(model.parameters(), lr=1e-2)
+    
     steps = 0
     running_loss = 0
-    loss_total = []
-
-    # wandb stuff
-    wandb_config(model)
-    
+    loss_total = []    
 
     for e in range(epochs):
         # Model in training mode, dropout is on
@@ -74,13 +71,12 @@ def train(model, trainloader, testloader, criterion, optimizer=None, epochs=5, p
                 
                 # Make suredropout and grads are on for training
                 model.train()
-    fig, ax = plt.subplots()
-    ax.plot(loss_total, label="Training Loss")
-    legend = ax.legend(loc='upper center',fontsize='x-large')
-    legend.get_frame().set_facecolor('C0')
-    plt.show()
 
-    
+    # fig, ax = plt.subplots()
+    # ax.plot(loss_total, label="Training Loss")
+    # legend = ax.legend(loc='upper center',fontsize='x-large')
+    # legend.get_frame().set_facecolor('C0')
+    # plt.show()
 
 
 def validation(model, testloader, criterion):
@@ -106,14 +102,3 @@ def validation(model, testloader, criterion):
         accuracy += equality.type_as(torch.FloatTensor()).mean()
   
     return test_loss, accuracy
-
-def wandb_config(model):
-    args = {"batch_size": 64,  # try log-spaced values from 1 to 50,000
-          "num_workers": 2,  # try 0, 1, and 2
-          "pin_memory": False,  # try False and True
-          "precision": 32,  # try 16 and 32
-          "optimizer": "Adadelta",  # try optim.Adadelta and optim.SGD
-          }
-    wandb.init(config=args)
-    wandb.watch(model, log_freq=100)
-    

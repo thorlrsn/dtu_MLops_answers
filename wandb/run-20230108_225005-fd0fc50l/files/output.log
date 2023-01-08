@@ -1,0 +1,31 @@
+
+Training...
+Epoch: 1/3..  Training Loss: 1.949..  Test Loss: 1.224..  Test Accuracy: 0.665
+Epoch: 1/3..  Training Loss: 0.704..  Test Loss: 0.805..  Test Accuracy: 0.773
+Epoch: 1/3..  Training Loss: 0.512..  Test Loss: 0.655..  Test Accuracy: 0.799
+Epoch: 1/3..  Training Loss: 0.370..  Test Loss: 0.604..  Test Accuracy: 0.815
+Epoch: 1/3..  Training Loss: 0.343..  Test Loss: 0.586..  Test Accuracy: 0.824
+Epoch: 1/3..  Training Loss: 0.300..  Test Loss: 0.525..  Test Accuracy: 0.843
+Epoch: 1/3..  Training Loss: 0.305..  Test Loss: 0.420..  Test Accuracy: 0.871
+Epoch: 1/3..  Training Loss: 0.228..  Test Loss: 0.399..  Test Accuracy: 0.881
+Epoch: 1/3..  Training Loss: 0.235..  Test Loss: 0.372..  Test Accuracy: 0.883
+Epoch: 2/3..  Training Loss: 0.189..  Test Loss: 0.403..  Test Accuracy: 0.872
+Epoch: 2/3..  Training Loss: 0.189..  Test Loss: 0.302..  Test Accuracy: 0.899
+Epoch: 2/3..  Training Loss: 0.189..  Test Loss: 0.312..  Test Accuracy: 0.900
+Epoch: 2/3..  Training Loss: 0.165..  Test Loss: 0.302..  Test Accuracy: 0.906
+Epoch: 2/3..  Training Loss: 0.150..  Test Loss: 0.305..  Test Accuracy: 0.905
+Epoch: 2/3..  Training Loss: 0.148..  Test Loss: 0.249..  Test Accuracy: 0.924
+Epoch: 2/3..  Training Loss: 0.158..  Test Loss: 0.301..  Test Accuracy: 0.906
+Epoch: 2/3..  Training Loss: 0.145..  Test Loss: 0.248..  Test Accuracy: 0.924
+Epoch: 2/3..  Training Loss: 0.119..  Test Loss: 0.291..  Test Accuracy: 0.914
+Epoch: 2/3..  Training Loss: 0.137..  Test Loss: 0.328..  Test Accuracy: 0.895
+Epoch: 3/3..  Training Loss: 0.100..  Test Loss: 0.253..  Test Accuracy: 0.917
+Epoch: 3/3..  Training Loss: 0.106..  Test Loss: 0.270..  Test Accuracy: 0.912
+Epoch: 3/3..  Training Loss: 0.105..  Test Loss: 0.217..  Test Accuracy: 0.931
+Epoch: 3/3..  Training Loss: 0.124..  Test Loss: 0.237..  Test Accuracy: 0.925
+Epoch: 3/3..  Training Loss: 0.100..  Test Loss: 0.196..  Test Accuracy: 0.939
+Epoch: 3/3..  Training Loss: 0.115..  Test Loss: 0.241..  Test Accuracy: 0.919
+Epoch: 3/3..  Training Loss: 0.097..  Test Loss: 0.188..  Test Accuracy: 0.938
+Epoch: 3/3..  Training Loss: 0.104..  Test Loss: 0.231..  Test Accuracy: 0.927
+Epoch: 3/3..  Training Loss: 0.101..  Test Loss: 0.214..  Test Accuracy: 0.931
+Epoch: 3/3..  Training Loss: 0.093..  Test Loss: 0.189..  Test Accuracy: 0.938

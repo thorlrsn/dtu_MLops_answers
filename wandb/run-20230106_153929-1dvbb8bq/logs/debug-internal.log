@@ -1,0 +1,161 @@
+2023-01-06 15:39:29,987 INFO    StreamThr :20924 [internal.py:wandb_internal():87] W&B internal server running at pid: 20924, started at: 2023-01-06 15:39:29.983113
+2023-01-06 15:39:29,995 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: status
+2023-01-06 15:39:29,999 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: status
+2023-01-06 15:39:30,003 DEBUG   SenderThread:20924 [sender.py:send():303] send: header
+2023-01-06 15:39:30,003 INFO    WriterThread:20924 [datastore.py:open_for_write():75] open: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\run-1dvbb8bq.wandb
+2023-01-06 15:39:30,291 DEBUG   SenderThread:20924 [sender.py:send():303] send: run
+2023-01-06 15:39:31,387 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: check_version
+2023-01-06 15:39:31,407 INFO    SenderThread:20924 [dir_watcher.py:__init__():216] watching files in: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files
+2023-01-06 15:39:31,407 INFO    SenderThread:20924 [sender.py:_start_run_threads():928] run started: 1dvbb8bq with start time 1673015969.979115
+2023-01-06 15:39:31,407 DEBUG   SenderThread:20924 [sender.py:send():303] send: summary
+2023-01-06 15:39:31,407 INFO    SenderThread:20924 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-06 15:39:31,411 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: check_version
+2023-01-06 15:39:31,745 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: run_start
+2023-01-06 15:39:31,761 DEBUG   HandlerThread:20924 [system_info.py:__init__():31] System info init
+2023-01-06 15:39:31,761 DEBUG   HandlerThread:20924 [system_info.py:__init__():46] System info init done
+2023-01-06 15:39:31,761 INFO    HandlerThread:20924 [system_monitor.py:start():150] Starting system monitor
+2023-01-06 15:39:31,761 INFO    HandlerThread:20924 [system_monitor.py:probe():171] Collecting system info
+2023-01-06 15:39:31,765 INFO    SystemMonitor:20924 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-06 15:39:31,765 DEBUG   HandlerThread:20924 [system_info.py:probe():195] Probing system
+2023-01-06 15:39:31,765 INFO    SystemMonitor:20924 [interfaces.py:start():168] Started cpu
+2023-01-06 15:39:31,777 INFO    SystemMonitor:20924 [interfaces.py:start():168] Started disk
+2023-01-06 15:39:31,777 INFO    SystemMonitor:20924 [interfaces.py:start():168] Started memory
+2023-01-06 15:39:31,781 DEBUG   HandlerThread:20924 [system_info.py:_probe_git():180] Probing git
+2023-01-06 15:39:31,781 INFO    SystemMonitor:20924 [interfaces.py:start():168] Started network
+2023-01-06 15:39:31,901 DEBUG   HandlerThread:20924 [system_info.py:_probe_git():188] Probing git done
+2023-01-06 15:39:31,901 DEBUG   HandlerThread:20924 [system_info.py:probe():241] Probing system done
+2023-01-06 15:39:31,901 DEBUG   HandlerThread:20924 [system_monitor.py:probe():180] {'os': 'Windows-10-10.0.19044-SP0', 'python': '3.8.10', 'heartbeatAt': '2023-01-06T14:39:31.765367', 'startedAt': '2023-01-06T14:39:29.947106', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'c:\\Users\\thorl\\Documents\\DTU\\JAN23\\dtu_MLops_answers\\S4\\M13\\main.py', 'codePath': 'S4\\M13\\main.py', 'git': {'remote': 'https://github.com/thorlrsn/dtu_MLops_answers', 'commit': '747183f662b6efba1d61f6928b0c5986aa61c0a5'}, 'email': 'thorlarsen96@gmail.com', 'root': 'C:/Users/thorl/Documents/DTU/JAN23/dtu_MLops_answers', 'host': 'LAPTOP-GGIBG9FB', 'username': 'thorl', 'executable': 'C:\\Users\\thorl\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3301.0, 'min': 0.0, 'max': 3301.0}, 'cpu_freq_per_core': [{'current': 3301.0, 'min': 0.0, 'max': 3301.0}], 'disk': {'total': 358.50487899780273, 'used': 283.4890594482422}, 'memory': {'total': 13.865959167480469}}
+2023-01-06 15:39:31,901 INFO    HandlerThread:20924 [system_monitor.py:probe():181] Finished collecting system info
+2023-01-06 15:39:31,901 INFO    HandlerThread:20924 [system_monitor.py:probe():184] Publishing system info
+2023-01-06 15:39:31,901 DEBUG   HandlerThread:20924 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-01-06 15:39:31,905 DEBUG   HandlerThread:20924 [system_info.py:_save_pip():67] Saving pip packages done
+2023-01-06 15:39:31,913 INFO    HandlerThread:20924 [system_monitor.py:probe():186] Finished publishing system info
+2023-01-06 15:39:32,245 DEBUG   SenderThread:20924 [sender.py:send():303] send: files
+2023-01-06 15:39:32,245 INFO    SenderThread:20924 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-01-06 15:39:32,265 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-06 15:39:32,269 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: stop_status
+2023-01-06 15:39:32,417 INFO    Thread-25 :20924 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\wandb-metadata.json
+2023-01-06 15:39:32,417 INFO    Thread-25 :20924 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\requirements.txt
+2023-01-06 15:39:32,417 INFO    Thread-25 :20924 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\wandb-summary.json
+2023-01-06 15:39:33,308 INFO    Thread-30 :20924 [upload_job.py:push():143] Uploaded file C:\Users\thorl\AppData\Local\Temp\tmpey29q75jwandb\nugnr3yv-wandb-metadata.json
+2023-01-06 15:39:33,799 DEBUG   SenderThread:20924 [sender.py:send():303] send: telemetry
+2023-01-06 15:39:33,799 DEBUG   SenderThread:20924 [sender.py:send():303] send: telemetry
+2023-01-06 15:39:34,023 DEBUG   SenderThread:20924 [sender.py:send():303] send: exit
+2023-01-06 15:39:34,023 INFO    SenderThread:20924 [sender.py:send_exit():442] handling exit code: 0
+2023-01-06 15:39:34,027 INFO    SenderThread:20924 [sender.py:send_exit():444] handling runtime: 2
+2023-01-06 15:39:34,031 INFO    SenderThread:20924 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-06 15:39:34,031 INFO    SenderThread:20924 [sender.py:send_exit():450] send defer
+2023-01-06 15:39:34,031 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: defer
+2023-01-06 15:39:34,031 INFO    HandlerThread:20924 [handler.py:handle_request_defer():162] handle defer: 0
+2023-01-06 15:39:34,031 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: defer
+2023-01-06 15:39:34,031 INFO    SenderThread:20924 [sender.py:send_request_defer():459] handle sender defer: 0
+2023-01-06 15:39:34,031 INFO    SenderThread:20924 [sender.py:transition_state():463] send defer: 1
+2023-01-06 15:39:34,031 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: defer
+2023-01-06 15:39:34,031 INFO    HandlerThread:20924 [handler.py:handle_request_defer():162] handle defer: 1
+2023-01-06 15:39:34,031 INFO    HandlerThread:20924 [system_monitor.py:finish():160] Stopping system monitor
+2023-01-06 15:39:34,035 DEBUG   SystemMonitor:20924 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-01-06 15:39:34,035 DEBUG   SystemMonitor:20924 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-01-06 15:39:34,035 DEBUG   SystemMonitor:20924 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-01-06 15:39:34,035 INFO    HandlerThread:20924 [interfaces.py:finish():175] Joined cpu
+2023-01-06 15:39:34,039 INFO    HandlerThread:20924 [interfaces.py:finish():175] Joined disk
+2023-01-06 15:39:34,039 INFO    HandlerThread:20924 [interfaces.py:finish():175] Joined memory
+2023-01-06 15:39:34,039 INFO    HandlerThread:20924 [interfaces.py:finish():175] Joined network
+2023-01-06 15:39:34,039 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: defer
+2023-01-06 15:39:34,039 INFO    SenderThread:20924 [sender.py:send_request_defer():459] handle sender defer: 1
+2023-01-06 15:39:34,039 INFO    SenderThread:20924 [sender.py:transition_state():463] send defer: 2
+2023-01-06 15:39:34,039 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: defer
+2023-01-06 15:39:34,039 INFO    HandlerThread:20924 [handler.py:handle_request_defer():162] handle defer: 2
+2023-01-06 15:39:34,039 DEBUG   SenderThread:20924 [sender.py:send():303] send: stats
+2023-01-06 15:39:34,039 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: defer
+2023-01-06 15:39:34,039 INFO    SenderThread:20924 [sender.py:send_request_defer():459] handle sender defer: 2
+2023-01-06 15:39:34,039 INFO    SenderThread:20924 [sender.py:transition_state():463] send defer: 3
+2023-01-06 15:39:34,043 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: defer
+2023-01-06 15:39:34,043 INFO    HandlerThread:20924 [handler.py:handle_request_defer():162] handle defer: 3
+2023-01-06 15:39:34,043 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: defer
+2023-01-06 15:39:34,043 INFO    SenderThread:20924 [sender.py:send_request_defer():459] handle sender defer: 3
+2023-01-06 15:39:34,043 INFO    SenderThread:20924 [sender.py:transition_state():463] send defer: 4
+2023-01-06 15:39:34,043 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: defer
+2023-01-06 15:39:34,043 INFO    HandlerThread:20924 [handler.py:handle_request_defer():162] handle defer: 4
+2023-01-06 15:39:34,043 DEBUG   SenderThread:20924 [sender.py:send():303] send: summary
+2023-01-06 15:39:34,043 INFO    SenderThread:20924 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-06 15:39:34,047 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: defer
+2023-01-06 15:39:34,047 INFO    SenderThread:20924 [sender.py:send_request_defer():459] handle sender defer: 4
+2023-01-06 15:39:34,047 INFO    SenderThread:20924 [sender.py:transition_state():463] send defer: 5
+2023-01-06 15:39:34,047 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: defer
+2023-01-06 15:39:34,047 INFO    HandlerThread:20924 [handler.py:handle_request_defer():162] handle defer: 5
+2023-01-06 15:39:34,047 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: defer
+2023-01-06 15:39:34,047 INFO    SenderThread:20924 [sender.py:send_request_defer():459] handle sender defer: 5
+2023-01-06 15:39:34,425 INFO    Thread-25 :20924 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\wandb-summary.json
+2023-01-06 15:39:34,425 INFO    Thread-25 :20924 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\output.log
+2023-01-06 15:39:35,071 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-06 15:39:36,437 INFO    Thread-25 :20924 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\output.log
+2023-01-06 15:39:38,242 INFO    SenderThread:20924 [sender.py:transition_state():463] send defer: 6
+2023-01-06 15:39:38,242 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: poll_exit
+2023-01-06 15:39:38,242 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: defer
+2023-01-06 15:39:38,246 INFO    HandlerThread:20924 [handler.py:handle_request_defer():162] handle defer: 6
+2023-01-06 15:39:38,246 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: defer
+2023-01-06 15:39:38,246 INFO    SenderThread:20924 [sender.py:send_request_defer():459] handle sender defer: 6
+2023-01-06 15:39:38,464 INFO    Thread-25 :20924 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\config.yaml
+2023-01-06 15:39:40,098 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-06 15:39:41,842 INFO    SenderThread:20924 [sender.py:transition_state():463] send defer: 7
+2023-01-06 15:39:41,842 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: defer
+2023-01-06 15:39:41,842 INFO    HandlerThread:20924 [handler.py:handle_request_defer():162] handle defer: 7
+2023-01-06 15:39:41,842 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: defer
+2023-01-06 15:39:41,842 INFO    SenderThread:20924 [sender.py:send_request_defer():459] handle sender defer: 7
+2023-01-06 15:39:41,842 INFO    SenderThread:20924 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-01-06 15:39:42,500 INFO    SenderThread:20924 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\output.log
+2023-01-06 15:39:42,500 INFO    SenderThread:20924 [dir_watcher.py:finish():392] scan: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files
+2023-01-06 15:39:42,500 INFO    SenderThread:20924 [dir_watcher.py:finish():406] scan save: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\config.yaml config.yaml
+2023-01-06 15:39:42,503 INFO    SenderThread:20924 [dir_watcher.py:finish():406] scan save: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\output.log output.log
+2023-01-06 15:39:42,503 INFO    SenderThread:20924 [dir_watcher.py:finish():406] scan save: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\requirements.txt requirements.txt
+2023-01-06 15:39:42,503 INFO    SenderThread:20924 [dir_watcher.py:finish():406] scan save: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\wandb-metadata.json wandb-metadata.json
+2023-01-06 15:39:42,503 INFO    SenderThread:20924 [dir_watcher.py:finish():406] scan save: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\wandb-summary.json wandb-summary.json
+2023-01-06 15:39:42,515 INFO    SenderThread:20924 [sender.py:transition_state():463] send defer: 8
+2023-01-06 15:39:42,523 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: defer
+2023-01-06 15:39:42,523 INFO    HandlerThread:20924 [handler.py:handle_request_defer():162] handle defer: 8
+2023-01-06 15:39:42,527 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: defer
+2023-01-06 15:39:42,527 INFO    SenderThread:20924 [sender.py:send_request_defer():459] handle sender defer: 8
+2023-01-06 15:39:42,527 INFO    SenderThread:20924 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-06 15:39:43,562 INFO    Thread-32 :20924 [upload_job.py:push():143] Uploaded file C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\output.log
+2023-01-06 15:39:43,574 INFO    Thread-33 :20924 [upload_job.py:push():143] Uploaded file C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\requirements.txt
+2023-01-06 15:39:43,578 INFO    Thread-31 :20924 [upload_job.py:push():143] Uploaded file C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\config.yaml
+2023-01-06 15:39:43,578 INFO    Thread-34 :20924 [upload_job.py:push():143] Uploaded file C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\files\wandb-summary.json
+2023-01-06 15:39:43,788 INFO    Thread-24 :20924 [sender.py:transition_state():463] send defer: 9
+2023-01-06 15:39:43,788 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: defer
+2023-01-06 15:39:43,788 INFO    HandlerThread:20924 [handler.py:handle_request_defer():162] handle defer: 9
+2023-01-06 15:39:43,788 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: defer
+2023-01-06 15:39:43,788 INFO    SenderThread:20924 [sender.py:send_request_defer():459] handle sender defer: 9
+2023-01-06 15:39:43,788 INFO    SenderThread:20924 [file_pusher.py:join():173] waiting for file pusher
+2023-01-06 15:39:43,788 INFO    SenderThread:20924 [sender.py:transition_state():463] send defer: 10
+2023-01-06 15:39:43,788 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: defer
+2023-01-06 15:39:43,788 INFO    HandlerThread:20924 [handler.py:handle_request_defer():162] handle defer: 10
+2023-01-06 15:39:43,788 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: defer
+2023-01-06 15:39:43,788 INFO    SenderThread:20924 [sender.py:send_request_defer():459] handle sender defer: 10
+2023-01-06 15:39:44,069 INFO    SenderThread:20924 [sender.py:transition_state():463] send defer: 11
+2023-01-06 15:39:44,073 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: defer
+2023-01-06 15:39:44,073 INFO    HandlerThread:20924 [handler.py:handle_request_defer():162] handle defer: 11
+2023-01-06 15:39:44,073 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: defer
+2023-01-06 15:39:44,073 INFO    SenderThread:20924 [sender.py:send_request_defer():459] handle sender defer: 11
+2023-01-06 15:39:44,073 INFO    SenderThread:20924 [sender.py:transition_state():463] send defer: 12
+2023-01-06 15:39:44,073 DEBUG   SenderThread:20924 [sender.py:send():303] send: final
+2023-01-06 15:39:44,073 DEBUG   SenderThread:20924 [sender.py:send():303] send: footer
+2023-01-06 15:39:44,073 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: defer
+2023-01-06 15:39:44,073 INFO    HandlerThread:20924 [handler.py:handle_request_defer():162] handle defer: 12
+2023-01-06 15:39:44,073 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: defer
+2023-01-06 15:39:44,073 INFO    SenderThread:20924 [sender.py:send_request_defer():459] handle sender defer: 12
+2023-01-06 15:39:44,077 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-06 15:39:44,077 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: poll_exit
+2023-01-06 15:39:44,077 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: server_info
+2023-01-06 15:39:44,077 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: get_summary
+2023-01-06 15:39:44,077 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: sampled_history
+2023-01-06 15:39:44,077 DEBUG   SenderThread:20924 [sender.py:send_request():317] send_request: server_info
+2023-01-06 15:39:44,725 INFO    MainThread:20924 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2023-01-06 15:39:44,725 INFO    MainThread:20924 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2023-01-06 15:39:44,725 INFO    MainThread:20924 [wandb_run.py:_footer_sync_info():3364] logging synced files
+2023-01-06 15:39:44,729 DEBUG   HandlerThread:20924 [handler.py:handle_request():139] handle_request: shutdown
+2023-01-06 15:39:44,729 INFO    HandlerThread:20924 [handler.py:finish():814] shutting down handler
+2023-01-06 15:39:45,082 INFO    WriterThread:20924 [datastore.py:close():279] close: C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\wandb\run-20230106_153929-1dvbb8bq\run-1dvbb8bq.wandb
+2023-01-06 15:39:45,723 INFO    SenderThread:20924 [sender.py:finish():1331] shutting down sender
+2023-01-06 15:39:45,723 INFO    SenderThread:20924 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-06 15:39:45,723 INFO    SenderThread:20924 [file_pusher.py:join():173] waiting for file pusher
+2023-01-06 15:39:46,432 INFO    MainThread:20924 [internal.py:handle_exit():77] Internal process exited
