@@ -1,3 +1,0 @@
-Create sweep with ID: 9fmrbl2d
-Sweep URL: https://wandb.ai/dtu/uncategorized/sweeps/9fmrbl2d
-wandb: WARNING Calling wandb.login() after wandb.init() has no effect.

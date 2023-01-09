@@ -1,3 +1,0 @@
-Create sweep with ID: gbbcarn5
-Sweep URL: https://wandb.ai/dtu/M13/sweeps/gbbcarn5
-wandb: WARNING Calling wandb.login() after wandb.init() has no effect.

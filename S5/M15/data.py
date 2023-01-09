@@ -4,7 +4,7 @@ from torch.utils.data import Dataset, DataLoader
 from torchvision import datasets, transforms
 from torchvision.transforms import ToTensor
 
-def mnist(bs=64):
+def mnist(path):
     """ Using corrupted dataset """
     class MyDataset(Dataset):
         def __init__(self, path, train):
@@ -27,14 +27,16 @@ def mnist(bs=64):
         def __getitem__(self, idx):
             return self.imgs[idx], self.labels[idx]
 
-    train_path = r"C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\S1\final_exercise\data\data_corrupt\corruptmnist\train_"
-    test_path = r"C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\S1\final_exercise\data\data_corrupt\corruptmnist\test.npz"
+    # train_path = r"C:\Users\Thor\Documents\dtu_MLops_answers\S5\M15\Data\data_corrupt\corruptmnist\train_"
+    # test_path = r"C:\Users\Thor\Documents\dtu_MLops_answers\S5\M15\Data\data_corrupt\corruptmnist\test.npz"
+    train_path = path + r"\train_"
+    test_path = path + r"\test.npz"
+    
     train_data = MyDataset(train_path, train=True)
-
     test_data = MyDataset(test_path, train=False)
     
-    trainloader = DataLoader(dataset=train_data, batch_size=bs, shuffle=True)
-    testloader = DataLoader(dataset=test_data, batch_size=bs, shuffle=True)
+    # trainloader = DataLoader(dataset=train_data, batch_size=bs, shuffle=True)
+    # testloader = DataLoader(dataset=test_data, batch_size=bs, shuffle=True)
 
     """Using normal dataset """
     # transform = transforms.Compose([transforms.ToTensor(),
@@ -47,4 +49,4 @@ def mnist(bs=64):
     # testset = datasets.FashionMNIST('~/.pytorch/F_MNIST_data/', download=True, train=False, transform=ToTensor())
     # testloader = torch.utils.data.DataLoader(testset, batch_size=64, shuffle=True)
 
-    return trainloader, testloader
+    return train_data, test_data

@@ -14,6 +14,12 @@ class MyAwesomeModel(nn.Module):
         self.fc2 = nn.Linear(256, 10)
         
     def forward(self, x):
+        # catching dimension errors.
+        if x.ndim != 4:
+            raise ValueError('Expected input to a 4D tensor')
+        if x.shape[1] != 1 or x.shape[2] != 28 or x.shape[3] != 28:
+            raise ValueError('Expected each sample to have shape [1, 28, 28]')
+        
         x = F.relu(self.conv1(x))
         x = F.relu(F.max_pool2d(self.conv2(x), 2))
         x = F.relu(F.max_pool2d(self.conv3(x),2))
@@ -37,7 +43,7 @@ def train(model, trainloader, testloader, criterion, optimizer=None, epochs=5, p
         for images, labels in trainloader:
             steps += 1
             images = images.float()
-
+            
             labels = labels.long()
 
             optimizer.zero_grad()

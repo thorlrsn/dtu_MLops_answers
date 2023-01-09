@@ -1,9 +1,12 @@
 import torch
 import wandb
 from torch import optim, nn
+from torch.utils.data import Dataset, DataLoader
 
 from data import mnist
 import model as Mymodel
+
+from tests import _PATH_DATA
 
 def train():
     # Given model
@@ -22,17 +25,19 @@ def train():
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=lr)
 
-    train_set, test_set = mnist(bs)
-
+    train_set, test_set = mnist(_PATH_DATA)
+    trainloader = DataLoader(dataset=train_set, batch_size=bs, shuffle=True)
+    testloader = DataLoader(dataset=test_set, batch_size=bs, shuffle=True)
+    
     # Given training
     # fc_model.train(model, train_set, test_set, criterion, optimizer, epochs=2)
 
     # Own training (The same as the given, since its pretty awesome)
     print("Training...")
-    Mymodel.train(model, train_set, test_set, criterion, optimizer, epochs)
+    Mymodel.train(model, trainloader, testloader, criterion, optimizer, epochs)
 
     # Exporting table to wandb with sampled images, preditions and truths
-    wandb_table(model, test_set)
+    wandb_table(model, testloader)
 
     # Saving model
     # save_checkpoint(model)
@@ -41,18 +46,20 @@ def evaluate(model_checkpoint):
     print("Evaluating...")
     print(model_checkpoint)
 
-    # TODO: Implement evaluation logic here
-    _ , test_set = mnist()
+    bs = wandb.config.batch_size
+    _ , test_set = mnist(_PATH_DATA)
+    testloader = DataLoader(dataset=test_set, batch_size=bs, shuffle=True)
+
     criterion = nn.CrossEntropyLoss()
     model = model_checkpoint
     model.eval()
                 
     # Turn off gradients for validation, will speed up inference
     with torch.no_grad():
-        test_loss, accuracy = Mymodel.validation(model, test_set, criterion)
+        test_loss, accuracy = Mymodel.validation(model, testloader, criterion)
     
-    print("Test Loss: {:.3f}.. ".format(test_loss/len(test_set)),
-            "Test Accuracy: {:.3f}".format(accuracy/len(test_set)))
+    print("Test Loss: {:.3f}.. ".format(test_loss/len(testloader)),
+            "Test Accuracy: {:.3f}".format(accuracy/len(testloader)))
 
 # custom functions
 def load_checkpoint(filepath):
@@ -129,7 +136,8 @@ def wandb_config(model):
 
 
 if __name__ == "__main__":
-    model = load_checkpoint(r"C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\S4\M13\checkpoint.pth")
+    # model = load_checkpoint(r"C:\Users\thorl\Documents\DTU\JAN23\dtu_MLops_answers\S4\M13\checkpoint.pth")
+    model = Mymodel.MyAwesomeModel()
     sweep_id = wandb_config(model)
     wandb.agent(sweep_id, function=train, count=4)
     # train()
