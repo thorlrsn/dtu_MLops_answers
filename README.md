@@ -38,5 +38,5 @@ Repo with the answers to the January course MLops
     S6
     -----------------------
     M20 - Done
-    M21 - Partially (Data storage ex.4-6) (Container reg. ex.10)
+    M21 - Partially (Data storage ex.4-6) (Container reg. ex.10) (Training ex.2+3)
 \*  = Core module
