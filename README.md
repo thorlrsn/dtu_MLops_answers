@@ -11,9 +11,9 @@ Repo with the answers to the January course MLops
     S2  
     ----------------------- 
     M5* - Done
-    M6 - Partially (ex.7)
+    M6 - Done (see cookiecutter repo)
     M7 - Not done
-    M8* - Not done
+    M8* - Done
 
     S3  
     -----------------------
