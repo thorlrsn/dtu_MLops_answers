@@ -35,4 +35,8 @@ Repo with the answers to the January course MLops
     M18 - Not done
     M19 - Not done
 
+    S6
+    -----------------------
+    M20 - Done
+    M21 - Partially (Data storage ex.4-6) (Container reg. ex.10)
 \*  = Core module
