@@ -46,7 +46,7 @@ https://github.com/thorlrsn/DTU_mlops_cookiecutter
     S7 
     -----------------------
     M22* - Done
-    M23 - Done
+    M23 - Not done
     M24* - Done
 
 \*  = Core module
