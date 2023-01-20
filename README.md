@@ -1,6 +1,9 @@
 # dtu_MLops answers
 Repo with the answers to the January course MLops
 
+Many of the exercises have been incorperated into the MNIST project which can be found in this repo:
+https://github.com/thorlrsn/DTU_mlops_cookiecutter
+
     S1  
     -----------------------
     M1 - Done
@@ -37,6 +40,13 @@ Repo with the answers to the January course MLops
 
     S6
     -----------------------
-    M20 - Done
-    M21 - Partially (Data storage ex.4-6) (Container reg. ex.10) (Training ex.2+3)
+    M20* - Done
+    M21* - Done
+
+    S7 
+    -----------------------
+    M22* - Done
+    M23 - Done
+    M24* - Done
+
 \*  = Core module
